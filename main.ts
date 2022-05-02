@@ -1,4 +1,4 @@
-import { serve } from 'https://deno.land/std@0.114.0/http/server.ts';
+import { serve } from 'https://deno.land/std@0.137.0/http/server.ts';
 
 export interface ReleaseInfo {
   id: string;
@@ -74,7 +74,5 @@ async function handler(req: Request): Promise<Response> {
     },
   });
 }
-
-console.log('Listening on http://localhost:8000');
 
 serve(handler);
