@@ -6,8 +6,8 @@ on:
 
 jobs:
   build:
-    name: ${{ matrix.kind }} ${{ matrix.os }} ${{ matrix.node }}
-    runs-on: ${{ matrix.os }} ${{ matrix.node }}
+    name: ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         os:
