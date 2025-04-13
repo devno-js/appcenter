@@ -9,8 +9,8 @@
     "start": "deno run --allow-read --allow-net main.ts"
   },
   "fmt": {
-    "options": {
-      "singleQuote": true
-    }
+    "semiColons": false,
+    "singleQuote": true,
+    "exclude": ["public/index.html"]
   }
 }
